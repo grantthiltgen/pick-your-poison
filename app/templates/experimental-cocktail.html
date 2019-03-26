@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style type="text/css">
+   .body {
+    margin: 5px
+    }
+
+    p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+   }
+    h4 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
+   }
+   
+
+    form {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
+    }
+  
+  </style>
+  <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Computer Generated Cocktails</title>
+</head>
+
+  <body>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/"><img src="static/images/martini.jpg" style="border:3px solid #ffffff" width="30" height="30" class="d-inline-block align-top" alt=""></a>
+      <a class="navbar-brand" href="/">Pick Your Poison</a>
+      <a class="navbar-brand" href="/experimental-cocktails">Experimental Cocktails</a>
+
+    </nav>
+<br>
+<blockquote class="blockquote text-center">    
+  <h3><strong>Experimental Cocktails</strong></h3></blockquote>
+  <h4>Welcome to Experimental Cocktails. If you want to try a truly new cocktail, this website will create a cocktail just for you using a recurrent neural network. Pick your poison of choice below or hit "Surprise me!"</h4>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2">
+      <img src="static/images/martini.jpg" style="border:3px solid #ffffff" width="300" height="300" class="d-inline-block align-top" alt="">
+    </div>
+    <div class="col-lg-10">
+    <form class="form-horizontal" method="post", enctype="application/json">
+      <div class="form-group mb-2">
+	<label for="Alcohol">Enter your drink base: </label>
+	<input class="form-control form-control-lg" name="Alcohol" placeholder="e.g. Rum, Vodka, Campari">
+      </div>
+      <button type="submit" class="btn btn-dark mb-3" value="submit" formaction="/experimental-pick-your-poison">Find a cocktail</button>
+      <button type="submit" class="btn btn-dark mb-3" value="submit" formaction="/experimental-surprise-me">Surprise me!</button>
+    
+    </form>
+  </div>
+
+</div>
+
+
+  </body>
+
+</html>
